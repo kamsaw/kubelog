@@ -1,6 +1,6 @@
 # debug webhook kubernetes
 ```
-student@cp$ sudo vim /etc/kubernetes/manifests/kube-apiserver.yaml
+vim /etc/kubernetes/manifests/kube-apiserver.yaml
 ---
 - --audit-log-path=/var/log/audit.log
 - --audit-policy-file=/etc/kubernetes/test-audit.yaml
