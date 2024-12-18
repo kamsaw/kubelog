@@ -1,4 +1,4 @@
-# debugowanie webhook kubernetes
+# debug webhook kubernetes
 ```
 student@cp$ sudo vim /etc/kubernetes/manifests/kube-apiserver.yaml
 ---
@@ -34,5 +34,6 @@ volumes:
 ```
 ```
 python3 -m http.server 8080
+or
 python3 server.py
 ```
