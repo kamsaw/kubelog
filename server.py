@@ -3,7 +3,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
     def do_POST(self):
         content_length = int(self.headers.get('Content-Length', 0))
         post_data = self.rfile.read(content_length).decode('utf-8')
-        print("Otrzymano POST:")
+        print("Received POST:")
         print(post_data)
         self.send_response(200)  
         self.end_headers()
