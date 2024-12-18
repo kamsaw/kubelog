@@ -8,7 +8,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.send_response(200)  
         self.end_headers()
         self.wfile.write(b'POST received')  
-port = 8080
+port = 9765
 server_address = ('', port)
 print(f"Server HTTP {port}")
 httpd = HTTPServer(server_address, SimpleHTTPRequestHandler)
