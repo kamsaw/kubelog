@@ -1,4 +1,4 @@
-debugowanie webhook
+# debugowanie webhook kubernetes
 ```
 student@cp$ sudo vim /etc/kubernetes/manifests/kube-apiserver.yaml
 ---
